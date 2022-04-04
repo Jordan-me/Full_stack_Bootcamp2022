@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html 201</title>
+        <link rel="shortcut icon" href="faviconImage.png" type="image/png">
+    </head>
+    <body>
+        <h1 id="top">Welcome #2</h1>
+        <a href="#bottom">Scroll to bottom of page</a><br>
+        <!--Underline <u><\u> deprecate-->
+        <span style="text-decoration: underline;">Underlined text</span>
+        <p>
+            Throughout the ages, readers have had numerous options.<br>
+            Depending on your personal preferences, you have been able to 
+            pick up mainstream fiction, geeky non-fiction, graphic novels, and magazines, amongst other things.<br>
+            Chat stories are the latest offerings. Presented as short stories delivered in the form of text messages,
+            these apps are wildly popular with younger readers.<br>
+            All you need to do is tap the bottom of the screen to reveal the next message, making it easy to
+            lose yourself in a narrative.<br>
+        </p>
+        <h2>Tables</h2>
+        <table border="1" width="100%">
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+
+            </tr>
+        </table><br>
+        <table border="1" width="100%">
+            <tr>
+                <td>ROW 1,CELL 1</td>
+                <td>ROW 1,CELL 2</td>
+            </tr>
+            <tr>
+                <td>ROW2, CELL1</td>
+            </tr>
+        </table><br>
+        <table border="1" width="100%">
+            <tr>
+                <th colspan="2">
+                Welcome to mt web app
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <h3>
+                        Navigation
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Content
+                    </h3>
+                </td>
+            </tr>
+            <h3>Classes</h3>
+            <!--Create css class-->
+            <style>
+                .classNameHere{
+                    padding: 40px;
+                    color: white;
+                    background-color: darkseagreen;
+                }
+                .uppercase{
+                    text-transform: uppercase;
+                }
+                #testingId{
+                    border: 5px solid red;
+                }
+            </style>
+            <div class="classNameHere ">
+                <p>
+                    Throughout the ages, readers have had numerous options.<br>
+                    Depending on your personal preferences, you have been able to 
+                    pick up mainstream fiction, geeky non-fiction, graphic novels, and magazines, amongst other things.<br>
+                    Chat stories are the latest offerings. Presented as short stories delivered in the form of text messages,
+                    these apps are wildly popular with younger readers.<br>
+                    All you need to do is tap the bottom of the screen to reveal the next message, making it easy to
+                    lose yourself in a narrative.<br> 
+                </p>
+            </div>
+            <div id ="testingId">
+                <p>
+                    Throughout the ages, readers have had numerous options.<br>
+                    Depending on your personal preferences, you have been able to 
+                    pick up mainstream fiction, geeky non-fiction, graphic novels, and magazines, amongst other things.<br>
+                    Chat stories are the latest offerings. Presented as short stories delivered in the form of text messages,
+                    these apps are wildly popular with younger readers.<br>
+                    All you need to do is tap the bottom of the screen to reveal the next message, making it easy to
+                    lose yourself in a narrative.<br> 
+                </p>
+            </div>
+            <div class="classNameHere uppercase">
+                <p>
+                    Throughout the ages, readers have had numerous options.<br>
+                    Depending on your personal preferences, you have been able to 
+                    pick up mainstream fiction, geeky non-fiction, graphic novels, and magazines, amongst other things.<br>
+                    Chat stories are the latest offerings. Presented as short stories delivered in the form of text messages,
+                    these apps are wildly popular with younger readers.<br>
+                    All you need to do is tap the bottom of the screen to reveal the next message, making it easy to
+                    lose yourself in a narrative.<br> 
+                </p>
+            </div>
+        </table>
+        <h3>Format code</h3>
+        <pre>
+            formatted       text
+            second line
+        </pre>
+        <p>
+            <code>
+                Another way of format text
+                not white             spaces sensitive like &lt;pre&gt;&lt;/pre&gt; tag
+            </code>
+        </p>
+
+        <h2>Forms</h2>
+        <form method="GET" action = "second_page.html">
+            <div>
+                <h3>Input field</h3>
+                <input  type="text" value="Hi!" placeholder="Enter your name"><br>
+                <input  required name="email" type="email" placeholder="Enter your email"><br>
+            </div>
+            <div>
+                <h3>Textarea field</h3>
+                <textarea required name="address" cols="30" rows="5" placeholder="Enter your Text">Text in here
+white spaces matter!
+                </textarea><br>
+            </div>
+            <div>
+                <h3>Button</h3>
+                <button type="button">Click me!</button>
+                <button type="reset">Reset forms</button>
+                <button type="submit">Submit forms</button>
+            </div>
+            <div>
+                <select name="selected_form">
+                    <option value="" disabled="disabled">
+                        -Disabled-
+                    </option>
+                    <option value="default-value" selected="selected">
+                        Selected by default
+                    </option>
+                    <option value="value1">Value #1</option>
+                    <option value="value2">Value #2</option>
+                    <option value="value3">Value #3</option>
+                    <option value="value4">Value #4</option>
+                    <option value="value5">Value #5</option>
+                </select>
+            </div>
+
+        </form>
+        
+        <h2>Embeds</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J5uUj8z6bzo" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div id = "bottom">
+            <a href="#top">Back to top</a>
+            <h3>copyright</h3>
+            &copy; 2022 <br> 
+            text<sup>&copy;supper 2022</sup><br>
+            text<sub>&copy;sub 2022</sub>
+
+        </div>
+    </body>
+</html>
